@@ -1,0 +1,60 @@
+body {
+  background-color: #efc6cd;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.icon {
+  height: 400px;
+}
+
+
+.birthday-title {
+  text-align: center;
+  font-size: 32pt;
+  color: #a77491;
+  font-family: Comic Sans MS;
+  text-shadow: 3px 3px #d4b3b3;
+  opacity: 0;
+}
+
+
+#myCanvas {
+  position: absolute;
+  top: 0;
+  /*top: 0px;*/
+  /*left: 50%;*/
+  /*margin-top: -15px;
+  margin-left: -50px;*/
+}
+
+.cake {
+  margin: auto;
+  position: relative;
+  width: 100px;
+  height: 15px;
+  display: none;
+}
+
+.cake-style-1 {
+  background-color: #ca9696;
+}
+.cake-style-2 {
+  background-color: #e0c975;
+}
+
+.cake-style-3 {
+  background-color: #8c6570;
+}
+
+.cake-style-cream {
+  background-color: #fffbfc;
+  border-radius: 10px 10px 0 0; /* for making the elements 'round' */
+}
+
+#candles {
+  display: none;
+}

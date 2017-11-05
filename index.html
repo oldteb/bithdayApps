@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="candle.css">
+    <script src="animate.js"></script>
+    <script>
+      function setHalfVolume() {
+        var myAudio = document.getElementById("audio1");
+        myAudio.volume = 1; //Changed this to 0.5 or 50% volume since the function is called Set Half Volume ;)
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <embed src="birthday_song.mp3" loop="true" hidden="true" autostart="true"> -->
+
+    <audio id= "audio1" autoplay onloadeddata="setHalfVolume()" hidden="true">
+      <source src="birthday_song2.mp3"  type="audio/mp3">
+    </audio>
+
+    <div class="icon">
+      <div id="cake1" class="cake cake-style-1 "></div>
+      <div id="cake2" class="cake cake-style-2"></div>
+      <div id="cake3" class="cake cake-style-3"></div>
+      <div id="cream" class="cake cake-style-cream">
+        <canvas id="myCanvas" width="100px" height="300px">
+        </canvas>
+      </div>
+      <div id="candles" class="cake cake-style-candle candle">
+        <canvas id="canvas-candle" width="100px" height="100px"></canvas>
+      </div>
+    </div>
+    <div class="birthday-title">
+      Happy Birthday!!!
+    </div>
+
+
+    <script>
+      animate()
+    </script>
+  </body>
+</html>
